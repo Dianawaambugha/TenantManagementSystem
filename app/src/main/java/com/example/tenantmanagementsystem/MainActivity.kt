@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Welcome Toast: only the first time, not after a rotation
+        // WelcomeToast: only the first time, not after a rotation
         val email = intent.getStringExtra("EMAIL")
         if (email != null && savedInstanceState == null) {
             Toast.makeText(this, "Logged in as $email", Toast.LENGTH_SHORT).show()
